@@ -1,25 +1,12 @@
 
-## 检查 PaddlePaddle 版本
-```shell
-$ python -c "import paddle;paddle.utils.run_check();print(paddle.__version__);"
-
-# 或
-
-$ python3
->>> import paddle
->>> paddle.utils.run_check()
-# 确认PaddlePaddle版本
->>> print(paddle.__version___)
-```
-
-## 安装 Ccache
-```shell
-$ sudo apt install ccache
-```
-
 ## 检查操作系统CPU架构
 ```shell
 $ python3 -c "import platform;print(platform.architecture()[0]);print(platform.machine())"
+```
+
+## 安装 Wget
+```shell
+$ sudo apt install wget
 ```
 
 ## 安装 CUDA Toolkit Installer，以网络方式安装
@@ -88,4 +75,22 @@ export PATH=/usr/local/cuda-12.9/bin:$PATH
 
 # 库文件：libcuda.so
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+```
+
+## 检查 PaddlePaddle 版本
+```shell
+$ python -c "import paddle;paddle.utils.run_check();print(paddle.__version__);"
+
+# 或
+
+$ python3
+>>> import paddle
+>>> paddle.utils.run_check()
+# 确认PaddlePaddle版本
+>>> print(paddle.__version___)
+```
+
+## 安装 Ccache
+```shell
+$ sudo apt install ccache
 ```
