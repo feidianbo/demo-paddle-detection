@@ -12,6 +12,11 @@ $ python3
 >>> print(paddle.__version___)
 ```
 
+## 安装 Ccache
+```shell
+$ sudo apt install ccache
+```
+
 ## 检查操作系统CPU架构
 ```shell
 $ python3 -c "import platform;print(platform.architecture()[0]);print(platform.machine())"
