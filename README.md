@@ -1,6 +1,10 @@
 
 ## 检查 PaddlePaddle 版本
 ```shell
+$ python -c "import paddle;paddle.utils.run_check();print(paddle.__version__);"
+
+# 或
+
 $ python3
 >>> import paddle
 >>> paddle.utils.run_check()
