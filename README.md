@@ -80,6 +80,11 @@ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 $ nvcc -V
 ```
 
+## 安装 Ccache
+```shell
+$ sudo apt install ccache
+```
+
 ## 检查 PaddlePaddle 版本
 ```shell
 $ python -c "import paddle;paddle.utils.run_check();print(paddle.__version__);"
@@ -93,7 +98,4 @@ $ python3
 >>> print(paddle.__version___)
 ```
 
-## 安装 Ccache
-```shell
-$ sudo apt install ccache
-```
+
