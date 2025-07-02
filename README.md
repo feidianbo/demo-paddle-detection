@@ -64,7 +64,7 @@ $ sudo apt-get install -y cuda-drivers
 $  python -m pip install paddlepaddle-gpu==3.1.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
 ```
 
-## 配置 
+## 配置 LibCuda
 ```shell
 $ sudo nano /etc/profile
 >>>
@@ -75,6 +75,9 @@ export PATH=/usr/local/cuda-12.9/bin:$PATH
 
 # 库文件：libcuda.so
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+
+# 验证
+$ nvcc -V
 ```
 
 ## 检查 PaddlePaddle 版本
