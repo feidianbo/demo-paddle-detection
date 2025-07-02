@@ -33,6 +33,29 @@ $ sudo apt-get update
 $ sudo apt-get -y install cuda-toolkit-12-9
 ```
 
+## 安装 cuDNN，以网络方式安装
+```shell
+# cuDNN 12
+$ wget https://developer.download.nvidia.com/compute/cudnn/9.10.2/local_installers/cudnn-local-repo-debian12-9.10.2_1.0-1_amd64.deb
+$  sudo dpkg -i cudnn-local-repo-debian12-9.10.2_1.0-1_amd64.deb
+$ sudo cp /var/cudnn-local-repo-debian12-9.10.2/cudnn-*-keyring.gpg /usr/share/keyrings/
+$ sudo apt-get update
+$ sudo apt-get -y install cudnn
+# 安装 CUDA 12 对应版本
+$ sudo apt-get -y install cudnn-cuda-12
+```
+
+## 安装 cuDNN，以本地方式安装
+```shell
+# cuDNN 12
+$ wget https://developer.download.nvidia.com/compute/cuda/repos/debian12/x86_64/cuda-keyring_1.1-1_all.deb
+$ sudo dpkg -i cuda-keyring_1.1-1_all.deb
+$ sudo apt-get update
+$ sudo apt-get -y install cudnn
+# 安装 CUDA 12 对应版本
+$ sudo apt-get -y install cudnn-cuda-12
+```
+
 ## 安装 Driver Installer
 ```shell
 $ sudo apt-get install -y nvidia-open
