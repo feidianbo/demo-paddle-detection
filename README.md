@@ -1,4 +1,4 @@
-## 设置 APT 国内源，Ubuntu
+## 设置 APT 国内源，Ubuntu 24.04
 ```shell
 $ sudo vim /etc/apt/sources.list.d/ubuntu.sources
 
