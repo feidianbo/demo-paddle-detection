@@ -14,6 +14,11 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 <<<
 ```
 
+## 安装 CUDA，Ubuntu
+```shel
+$ sudo apt install nvidia-cuda-toolkit
+```
+
 ## 设置 Proxy 代理
 ```shell
 $ nano ~/.bashrc
