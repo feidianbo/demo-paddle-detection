@@ -136,6 +136,11 @@ $ pip install --upgrade setuptools
 $ sudo apt install ccache
 ```
 
+## 安装 Paddlex[CV]
+```shell
+$ pip install "paddlex[cv]==3.0.2" -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 ## 检查 PaddlePaddle 版本
 ```shell
 $ python -c "import paddle;paddle.utils.run_check();print(paddle.__version__);"
