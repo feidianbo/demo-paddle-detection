@@ -125,6 +125,12 @@ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 $ nvcc -V
 ```
 
+## 安装 SetupTools
+```shell
+$ source .venv/bin/activate
+$ pip install --upgrade setuptools
+```
+
 ## 安装 Ccache
 ```shell
 $ sudo apt install ccache
