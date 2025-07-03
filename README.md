@@ -98,4 +98,14 @@ $ python3
 >>> print(paddle.__version___)
 ```
 
+## 安装 PaddleDetection
+```shell
+$ git clone https://github.com/PaddlePaddle/PaddleDetection.git
+$ cd
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 编译安装paddledet
+$ python setup.py install
+```
 
