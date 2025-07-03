@@ -16,8 +16,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 ## 设置 Proxy 代理
 ```shell
-$
-nano ~/.bashrc
+$ nano ~/.bashrc
 
 >>>
 # add for proxy
