@@ -1,5 +1,20 @@
+## 设置 APT 国内源，Ubuntu
+```shell
+$ sudo vim /etc/apt/sources.list.d/ubuntu.sources
 
-## 
+# 根据需要选择以下国内镜像源之一，并粘贴到文件中：
+
+# 阿里云源
+>>>
+Types: deb
+URIs: http://mirrors.aliyun.com/ubuntu/
+Suites: noble noble-updates noble-security
+Components: main restricted universe multiverse
+Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+<<<
+```
+
+## 设置 Proxy 代理
 ```shell
 $
 nano ~/.bashrc
